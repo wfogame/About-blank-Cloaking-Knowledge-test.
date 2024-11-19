@@ -31,7 +31,7 @@
         var urlobj = new window.URL(window.location.href);
         let url = prompt("Please enter the url", "index.html");
 if(url){
-  let t;  document.getElementById("my").onclick = function(){
+  let t; 
 
 if(t){
   t.focus();
@@ -39,14 +39,14 @@ if(t){
 
 
 
-    
-      var iframe = t.document.createElement('iframe'); 
+t = window.open();      
+  var iframe = t.document.createElement('iframe'); 
   document.querySelector('button').style.background='#ff5148'; 
  document.getElementById("my").innerHTML="Launched";
     
 iframe.src =  prompt("Please enter url", "index.html");
       
-  }
+  
   }
 }
   function replica(){
