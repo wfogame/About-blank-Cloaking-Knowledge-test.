@@ -39,6 +39,10 @@ t = window.open();
                                                                                                             t.document.body.style.height = '100vh'; 
   document.querySelector('button').style.background='#ff5148'; 
  document.getElementById("my").innerHTML="Launched";
+     iframe.style.border = 'none'; 
+                                                                                                            iframe.style.width = '100%';
+          iframe.style.height = '100%'; 
+       iframe.style.margin = '0';
     iframe.src =  url;
   }
   
@@ -46,7 +50,7 @@ t = window.open();
 
   function replica(){
 
-t.document.body.innerHTML=document.body.innerHTML;
+t.document.body.innerHTML = document.body.innerHTML;
   }
 </script>
    
