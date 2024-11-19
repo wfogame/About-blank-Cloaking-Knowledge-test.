@@ -24,16 +24,23 @@
   
 <button onclick = "MyFunction()">Click To Launch</button>
   <br>
-<button onclick = "replica()">Click To Launch</button>
+<button id = "me" onclick = "replica()">Click For Replica</button>
 
 <script>
   function MyFunction() {
-let w = window.URL(window.location.href);
+let w = new window.URL(window.location.href);
         let url = prompt("Please enter url", "index.html");
-let t = window.open(); var iframe = t.document.createElement('iframe'); 
+let t = window.open();
+    var iframe = t.document.createElement('iframe'); 
+
+    
 iframe.src = url;
   document.querySelector('button').style.background='#ff5148'; 
  document.getElementById("my").innerHTML="Launched";
+
+
+
+    
   }
   function replica(){
   var s = window.open();
