@@ -27,30 +27,21 @@
 <button id = "me" onclick = "replica()">Click For Replica</button>
 
 <script>
+
+  
         var urlobj = new window.URL(window.location.href);
         let url = prompt("Please enter the url", "index.html");
-
-    function MyFunction() {
-
-if(url){
-  let t; 
-
-if(t){
-  t.focus();
-     }else {
-
-
-
+  let t;
+  if(url){
 t = window.open();      
   var iframe = t.document.createElement('iframe'); 
   document.querySelector('button').style.background='#ff5148'; 
  document.getElementById("my").innerHTML="Launched";
-    
-iframe.src =  url;
-      
-  
+    iframe.src =  url;
   }
-}
+  
+  
+
   function replica(){
 
 t.document.body.innerHTML=document.body.innerHTML;
