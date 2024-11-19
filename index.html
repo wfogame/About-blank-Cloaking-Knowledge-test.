@@ -27,9 +27,11 @@
 <button id = "me" onclick = "replica()">Click For Replica</button>
 
 <script>
-  function MyFunction() {
         var urlobj = new window.URL(window.location.href);
         let url = prompt("Please enter the url", "index.html");
+
+    function MyFunction() {
+
 if(url){
   let t; 
 
@@ -44,7 +46,7 @@ t = window.open();
   document.querySelector('button').style.background='#ff5148'; 
  document.getElementById("my").innerHTML="Launched";
     
-iframe.src =  prompt("Please enter url", "index.html");
+iframe.src =  url;
       
   
   }
