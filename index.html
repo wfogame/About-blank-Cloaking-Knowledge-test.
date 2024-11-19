@@ -30,12 +30,13 @@
   function MyFunction() {
         var urlobj = new window.URL(window.location.href);
         let url = prompt("Please enter the url", "index.html");
+if(url){
+  let t;  document.getElementById("my").onclick = function(){
 
-  
 if(t){
   t.focus();
      }else {
-let t = window.open(); 
+
 
 
     
@@ -46,10 +47,11 @@ let t = window.open();
 iframe.src =  prompt("Please enter url", "index.html");
       
   }
+  }
+}
   function replica(){
 
 t.document.body.innerHTML=document.body.innerHTML;
-  }
   }
 </script>
    
