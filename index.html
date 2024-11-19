@@ -11,15 +11,21 @@
 <body>
   
 <buttom id = "20" onclick = "MyFunction()">Click To Launch</buttom>
+<buttom id = "20" onclick = "replica()">Click To Launch</buttom>
 
 <script>
+  function MyFinction() {
 let w = window.URL(window.location.href);
 let t = window.open(); var iframe = t.document.createElement('iframe'); 
 iframe.src = url;
+
+  }
+  function replica(){
+  var s = window.open();
   document.querySelector('button').style.background='#ff5148'; 
  document.getElementById("my").innerHTML="Launched";
 t.document.querySelectorAll().innerHTML=document.querySelectorAll().innerHTML;
-
+  }
 </script>
 
   
