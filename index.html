@@ -22,7 +22,7 @@
 </head>
 <body>
   
-<button onclick = "MyFunction()">Click To Launch</button>
+<button id = "my" onclick = "MyFunction()">Click To Launch</button>
   <br>
 <button id = "me" onclick = "replica()">Click For Replica</button>
 
@@ -32,20 +32,19 @@ let w = new window.URL(window.location.href);
         let url = prompt("Please enter url", "index.html");
 let t = window.open();
     var iframe = t.document.createElement('iframe'); 
-
-    
-iframe.src = url;
   document.querySelector('button').style.background='#ff5148'; 
  document.getElementById("my").innerHTML="Launched";
+    
+iframe.src = url;
+
 
 
 
     
   }
   function replica(){
-  var s = window.open();
 
-s.document.body.innerHTML=document.body.innerHTML;
+t.document.body.innerHTML=document.body.innerHTML;
   }
 </script>
    
