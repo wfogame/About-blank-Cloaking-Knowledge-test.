@@ -35,6 +35,8 @@
   if(url){
 t = window.open();      
   var iframe = t.document.createElement('iframe'); 
+       t.document.body.style.margin = '0';
+                                                                                                            t.document.body.style.height = '100vh'; 
   document.querySelector('button').style.background='#ff5148'; 
  document.getElementById("my").innerHTML="Launched";
     iframe.src =  url;
